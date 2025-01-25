@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 
 export default function RecipeCard({ recipe }) {
   return (
-    <Link href={`/recipes/${recipe.id}`}>
+    <Link href={`/recipe-list/${recipe.id}`}>
       <Card className="overflow-hidden hover:shadow-lg duration-300 hover:scale-105 transition-all">
         <Image
           src={recipe.image || "/placeholder.svg"}
